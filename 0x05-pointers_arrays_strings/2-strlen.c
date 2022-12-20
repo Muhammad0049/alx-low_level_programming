@@ -2,14 +2,16 @@
 
 /**
  * _strlen - returns the lenght of a string
- * @s: thats the string to get the lenght
- * Return: the lenght of @str
+ * @s: string whose lenght is to be found
+ *
+ * Return: the lenght of @s
  */
-size_t_strlen(const char *str)
+int _strlen(char *s)
 {
-	size_t lenght = 0;
+	int count = 0;
 
-	while (*str++)
-		lenght++;
-	return (lenght);
+	while (s[count] != '\0')
+		count++;
+
+	return (count);
 }
